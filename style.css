@@ -866,15 +866,15 @@ box-shadow:  12px 12px 38px #080808,
 .slider img {
     flex: 1 0 100%;
     scroll-snap-align: start;
-    max-width: 300px;
+    max-width: 500px;
     height: 100px;
 }
 
 .slider video {
     flex: 1 0 100%;
     scroll-snap-align: start;
-    max-width: 100%;
-    height: auto;
+    max-width: 500px;
+    height: 100px;
 }
 
 .prevBtn, .nextBtn {
@@ -1178,13 +1178,15 @@ box-shadow:  12px 12px 38px #080808,
 .slider-1 img {
     flex: 1 0 100%;
     scroll-snap-align: start;
-    object-fit: cover;
+    max-width: 500px;
+    height: 100px;
 }
 
 .slider-1 video {
     flex: 1 0 100%;
     scroll-snap-align: start;
-    object-fit: cover;
+    max-width: 500px;
+    height: 100px;
 }
 
 .prevBtn:hover, .nextBtn:hover {

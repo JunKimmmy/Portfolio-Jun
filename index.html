@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jun's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body style="background-color: #141414;">
+    <nav id="desktop-nav">
+        <div class="logo">
+            <h1 class="logotop">Jun Young Kim</h1>
+            <p class="logobottom">Electrical Engineer</p>
+        </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">
+            <h1 class="logotop">Jun Young Kim</h1>
+            <p class="logobottom">Electrical Engineer</p>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile"> 
+        <div class="section__text">
+            <h1 class="title">Jun Young Kim</h1>
+            <div class="containertypedout">
+                <p class="typed-out">Creative. Driven. Engineer.</p>
+            </div>
+            <div class="btn-container">
+                <!--CHANGE THE PDF DOCUMENT/DIRECTORY AFTER UPDATING RESUME!!! -->
+                <button class="btn btn-color-2" onclick="window.open('./assets/JunYoungKim_Resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin-app-white-icon.webp" alt="My LinkedIn profile" class="icon" onclick="location.href= 'https://linkedin.com/in/jun-kim-40851527a'">
+                <img src="./assets/github_icon.png" alt="My Github profile" class="icon" onclick="location.href= 'https://github.com/JunKimmmy'">
+            </div>
+        </div>
+        <div class="section__pic-container">
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.54/build/spline-viewer.js"></script>
+            <spline-viewer hint loading-anim-type="spinner-small-light" url="https://prod.spline.design/va6zZcx7F725f0-D/scene.splinecode"></spline-viewer>
+        </div>
+    </section>
+    <section id="about">
+    <p class="titleabout">About Me</p>
+        <div class="aboutcontent">
+            <div class="metalgear">
+                <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.54/build/spline-viewer.js"></script>
+                <spline-viewer url="https://prod.spline.design/x2VMsNUWo-kho6Bc/scene.splinecode"></spline-viewer>
+            </div>
+            <div class="about__text"> 
+                <p class="hithere">std::cout &#60;&#60; "hello world";</p>
+                <p class="textabout"> 
+                    My name is Jun Kim.
+                    <br><br>
+                    I am currently in the process of complete my <b>Bachelors of Applied Sciences (BASc) in 
+                    Electrical Engineering</b> at the <b>University of Waterloo</b>.
+                    <br><br>I thrive to break boundaries, constantly seeking out working 
+                    with challenging issues with complex technologies, thus, I excell in
+                    enviornments that push me to adapt. I am extremely interested in fields such
+                    as accessibility technologies, AI, web development, cloud computing, integrated circuits, semiconductors, and more.
+                    <br>Outside formalities, some of my interests lie in programming, making robots, writing
+                    music, working out, making websites, and playing videogames.
+                    <br>
+
+                    <br><br>Thanks for swinging by my portfolio – your time is greatly appreciated! Let's connect and explore potential collaborations together.
+
+                </p>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <p class="titleskills">My Skills</p>
+            <div class="skillscontent">
+
+            <p class="softwaretitle">Software Skills</p>
+                <div class="softwareskills">
+                    <div class="softwareimange-1">
+                        <img class="skillsimage" src="assets/1_autodesk-inventor-professional-product-icon-128@2x.png" alt="">
+                        <p>Inventor</p>
+                    </div>
+
+                    <div class="softwareimange-2">
+                        <img class="skillsimage" src="assets/kisspng-computer-icons-solidworks-e-5ae0fa43334702.1540505415246935712101-removebg-preview.png" alt="">
+                        <p>SOLIDWORKS</p>
+                    </div>
+
+                    <div class="softwareimange-3">
+                        <img class="skillsimage" src="assets/Adobe_Illustrator_CC_icon.svg.png" alt="">
+                        <p>Illustrator</p>
+                    </div>
+
+                    <div class="softwareimange-6">
+                        <img class="skillsimage" src="assets/autocad-logo-69326D7728-seeklogo.com.png" alt="">
+                        <p>AutoCAD</p>
+                    </div>
+
+                    <div class="softwareimange-7">
+                        <img class="skillsimage" src="assets/autodesk-revit-product-icon-128@2x.png" alt="">
+                        <p>Revit</p>
+                    </div>
+
+                    <div class="softwareimange-8">
+                        <img class="skillsimage" src="assets/altium_logo-removebg-preview.png" alt="">
+                        <p>Altium</p>
+                    </div>
+                    
+                    <div class="softwareimange-4">
+                        <img class="skillsimage" src="assets/Microsoft_Office_Excel_(2019–present).svg.png" alt="">
+                        <p>Excel</p>
+                    </div>
+                </div>
+
+                <p class="programmingtitle">Programming Languages</p>
+                <div class="programmingskills">
+                    <div>
+                        <img class="skillsimage" src="assets/732212.png" alt="">
+                        <p>HTML</p>
+                    </div>
+
+                    <div>
+                        <img class="skillsimage" src="assets/121-css3-512.webp" alt="">
+                        <p>CSS</p>
+                    </div>
+
+                    <div>
+                        <img class="skillsimage" src="assets/kisspng-javascript-angularjs-node-js-computer-icons-clip-a-clipart-js-5c0d82819a4963.228658921544389249632-removebg-preview.png" alt="">
+                        <p>JavaScript</p>
+                    </div>
+
+                    <div>
+                        <img class="skillsimage" src="assets/ISO_C++_Logo.svg.png" alt="">
+                        <p>C++</p>
+                    </div>
+
+                    <div>
+                        <img class="skillsimage" src="assets/python-5-logo-png-transparent.png" alt="">
+                        <p>Python</p>
+                    </div>
+
+                </div>
+
+            </div>
+            </div>
+    </section>
+    <section id="projects">
+        <p class="titleprojects">My Projects</p>
+                <section id="project__prosthetic">
+                    <div class="content-prosthetic">
+                        <div class="modelprosthetic">
+                            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.55/build/spline-viewer.js"></script>
+                            <spline-viewer url="https://prod.spline.design/7GIstm15k4z-Mnlq/scene.splinecode"></spline-viewer>
+                        </div>
+                        <div class="textprosthetic">
+                            <p class="titleprosthetic">Bionic EVO: Prosthetic Arm</p>
+                            <p class="descriptionprosthetic"> 
+                                <b>September 2022 - December 2023</b> <br>
+                                <br><b>Skills:</b><br>C++, SOLIDWORKS, LaTeX, 3D Printing, Arduino IDE <br>
+                                <br><b>Components:</b><br>STM32 Microcontroller, SG90 Servo Motor, Electromyography (EMG) Sensor, Potentiometer, Arduino UNO <br>
+                                <br><b>Project Description:</b>
+                                <br>The primary objective of this project is to design
+                                and implement an advanced prosthetic human arm that helps
+                                amputees regain functionality. The aim is to create a prosthetic
+                                arm that closely mimics the capabilities of a real human arm,
+                                allowing users to perform a wide range of daily activities and
+                                regain a sense of independence. 
+                                <br><br>Using a STM32 Microcontroller in conjunction with 5 servo motors and a electromyography (EMG) Sensor
+                                the device is controlled using muscle control via the EMG sensor, which then dictates the movement of the servos that contract the fingers of the prosthetic
+                                using string.
+                                <br><br>I leveraged 75+ months expertise in C++ programming and circuitry design to create an efficient control system that would work seamlessly with the large quantity of components used, and an advanced input such as the EMG sensor.
+                                <br><br>I harnessed 2 years of SOLIDWORKS experience skills via a mentor to create a functional 3D design for the prosthetic that was modeled based on meticulous measurements based on human anatomy and to house each component.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="btn-container-2">
+                        <button class="btn-1 btn-color-p2" onclick="window.open('./assets/BIONIC_EVO__Project_Proposal.pdf')">Project Proposal</button>
+                        <button class="btn-1 btn-color-p1" onclick="window.open('./assets/Final Design Document.pdf')">Design Document</button>
+                        <button class="btn-1 btn-color-p3" onclick="location.href= 'https://github.com/JunKimmmy/BionicEvo'">Github Repository</button>
+                        <button class="btn-1 btn-color-p4" onclick="window.open('./assets/Project_Bionic_EVO_3D_Models.zip')">Download 3D Models</button>
+                    </div>
+                    <p class="imagegallerytitle">Images/Videos:</p>
+                    <div class="contentimage-prosthetic">
+                        <button class="prevBtn">&#10094;</button>
+                        <div class="image-gallery-1">
+                            <div class="slider-wrapper-1">
+                                <div class="slider">
+                                    <img id="slide-1" src="assets/IMG_2973.jpg" alt="Full Design Assembled">
+                                    <img id="slide-2" src="assets/FullProstheticAssembly.png" alt="Full Prosthetic Assembly">
+                                    <img id="slide-3" src="assets/Screenshot 2024-03-02 at 3.19.11 AM.png" alt="Schematic Drawing">
+                                    <img id="slide-4" src="assets/FullProstheticAssembly_TechincalDrawing.png" alt="Technical Drawing">
+                                    <img id="slide-5" src="assets/ConceptualDrawing.jpg" alt="Conceptual Drawing">
+                                    
+                                    <img id="slide-6" src="assets/IMG_2976.jpg" alt="Circuitry Assembled">
+                                    <img id="slide-7" src="assets/IMG_2975.jpg" alt="Full Design Assembled2">
+                                    <img id="slide-8" src="assets/IMG_2974.jpg" alt="Full Design Assembled3">
+                                    <video id="slide-9" controls src="assets/PrototypeTestVideo.MP4"></video>
+                                </div>                                
+                            </div>
+                        </div>
+                        <button class="nextBtn">&#10095;</button>
+                    </div>
+                </section>
+
+                <section id="project__excavator">
+                    <div class="content-excavator">
+                        <div class="modelexcavator">
+                            <img class="excavatorimage" src="assets/Screenshot 2024-03-02 at 6.05.46 AM.png" alt="3D design">
+                        </div>
+                        <div class="textexcavator">
+                            <p class="titleexcavator">Gyro Controlled Excavator Arm</p>
+                            <p class="descriptionexcavator"> 
+                                <b>December 2021 - June 2023</b> <br>
+                                <br><b>Skills:</b><br>C++, SOLIDWORKS, 3D Printing, Arduino IDE <br>
+                                <br><b>Components:</b><br>Arduino Micro, SG90 Servo Motor, MPU-6050 Accelerometer Gyroscope<br>
+                                <br><b>Project Description:</b>
+                                <br>Embarking on the Gyro Controlled Excavator project served as a dynamic learning journey, introducing me to SOLIDWORKS modeling, MPU-6050 Accelerometer Gyroscopes, and refining soldering skills. The project aimed to fuse these newfound skills into a cohesive robotic endeavor.
+                                <br><br>Using SOLIDWORKS, I meticulously designed a miniature robotic arm with three servo motors, each governing a joint's movement. Soldering the Gyroscope to the microcontroller facilitated seamless integration, enhancing the arm's functionality.
+                                <br><br>Programming the Gyro enabled precise motion interpretation, empowering the robotic arm to respond with fluidity and accuracy. This holistic process honed skills in CAD modeling, soldering, and programming, underscoring the project's role as a catalyst for continuous learning and exploration in robotics.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="btn-container-3">
+                        <button class="btn-2 btn-color-p2" onclick="window.open('./assets/Razin Saeed _ Jun Young Kim - Robotic Arm - TECHNICAL REPORT.pdf')">Technical Report</button>
+                    </div>
+                    <p class="imagegallerytitle">Images/Videos:</p>
+                    <div class="contentimage-excavator">
+                        <button class="prevBtn">&#10094;</button>
+                        <div class="image-gallery-2">
+                            <div class="slider-wrapper-2">
+                                <div class="slider-1">
+                                    <img id="slide-1" src="assets/Screenshot 2023-09-12 at 6.15.59 PM.png" alt="Full Design Assembled">
+                                    <img id="slide-2" src="assets/Screenshot 2023-09-12 at 6.19.03 PM.png" alt="Full Design Assembly">
+                                    <img id="slide-3" src="assets/Screenshot 2023-09-12 at 6.14.47 PM.png" alt="Schematic Drawing">
+                                    <img id="slide-4" src="assets/Screenshot 2023-09-12 at 6.18.42 PM.png" alt="Circuitry">                                    
+                                    <img id="slide-5" src="assets/Screenshot 2023-09-12 at 6.17.32 PM.png" alt="Code">                                    
+                                    <video id="slide-6" controls src="assets/IMG_4284 .MOV"></video>
+                                    <video id="slide-7" controls src="assets/IMG_4282 .MOV"></video>
+                                </div>                                
+                            </div>
+                        </div>
+                        <button class="nextBtn">&#10095;</button>
+                    </div>
+                </section>
+
+    </section>
+    <section id="contact">
+        <p class="titlecontact">Contact Me</p>
+            <div class="contactcontent">
+                <div class="contactform">   
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                        <div class="contact-left-title">
+                            <h2>Get In Touch With Me</h2>
+                            <hr>
+                        </div>
+                        <input type="hidden" name="access_key" value="8a6af71a-7184-4651-9736-66925bc3fd90">
+                        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                        <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                        <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                        <button type="submit">Submit &#8594;</button>
+                    </form>                 
+                    <div class="contact-right">
+                        <div class="phonenumber">
+                            <img class="phoneicon"src="assets/phone-white-icon-23.png" alt="Phone icon">
+                            <p class="phonetext">
+                            Phone #: 647-787-3364
+                            </p>
+                        </div>
+
+                        <div class="email">
+                            <img class="emailicon"src="assets/email-xxl.png" alt="Phone icon">
+                            <p class="emailtext">
+                            Email: Jun31kim@gmail.com
+                            </p>
+                        </div>
+                        
+                        <button class="linkedin">
+                            <img class="linkedinimage"src="assets/linkedin-app-white-icon.webp" alt="linkedin" onclick="location.href= 'https://linkedin.com/in/jun-kim-40851527a'">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+    <footer class="footer">
+        <ul class="social-icon">
+          <li class="social-icon__item"><a class="social-icon__link" onclick="location.href= 'https://linkedin.com/in/jun-kim-40851527a'">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" onclick="location.href= 'https://github.com/JunKimmmy'">
+              <ion-icon name="logo-github"></ion-icon>
+            </a></li>
+        </ul>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="#about">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="#skills">Skills</a></li>
+          <li class="menu__item"><a class="menu__link" href="#projects">Projects</a></li>
+          <li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
+    
+        </ul>
+        <p>Jun Young Kim</p>
+        <p>Programmed on HTML, JavaScript, and CSS</p>
+    </footer>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -866,13 +866,15 @@ box-shadow:  12px 12px 38px #080808,
 .slider img {
     flex: 1 0 100%;
     scroll-snap-align: start;
-    object-fit: cover;
+    max-width: 100%;
+    height: auto;
 }
 
 .slider video {
     flex: 1 0 100%;
     scroll-snap-align: start;
-    object-fit: fill;
+    max-width: 100%;
+    height: auto;
 }
 
 .prevBtn, .nextBtn {

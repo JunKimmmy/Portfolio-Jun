@@ -1003,6 +1003,7 @@ box-shadow:  12px 12px 38px #080808,
         position: relative;
         max-width: 17rem;
         margin: 0 auto;
+        width: 220px;
     }
   
 
@@ -1039,30 +1040,14 @@ box-shadow:  12px 12px 38px #080808,
     }
 
     .slider img {
-        object-fit: none;
         max-width: 100%;
         height: auto;
     }
     
     .slider video {
-        object-fit: none;
         max-width: 100%;
         height: auto;
     }
-
-    .slider-1 img {
-        object-fit: none;
-        max-width: 100%;
-        height: auto;
-    }
-    
-    .slider-1 video {
-        object-fit: none;
-        max-width: 100%;
-        height: auto;
-    }
-    
-    
 }
 
 /* _______ Section */
@@ -1300,6 +1285,17 @@ box-shadow:  12px 12px 38px #080808,
         position: relative;
         max-width: 17rem;
         margin: 0 auto;
+        width: 220px;
+    }
+
+    .slider-1 img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .slider-1 video {
+        max-width: 100%;
+        height: auto;
     }
   
     /* BUTTONS PROSTHETIC */
@@ -1324,6 +1320,7 @@ box-shadow:  12px 12px 38px #080808,
         margin-left: 100px;
         margin-right: 100px;
     }
+    
 }
 
 /*contact*/

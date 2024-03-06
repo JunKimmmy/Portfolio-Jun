@@ -866,15 +866,13 @@ box-shadow:  12px 12px 38px #080808,
 .slider img {
     flex: 1 0 100%;
     scroll-snap-align: start;
-    max-width: 500px;
-    height: 100px;
+    object-fit: cover;
 }
 
 .slider video {
     flex: 1 0 100%;
     scroll-snap-align: start;
-    max-width: 500px;
-    height: 100px;
+    object-fit: cover;
 }
 
 .prevBtn, .nextBtn {
@@ -1039,6 +1037,32 @@ box-shadow:  12px 12px 38px #080808,
         border-radius: 1rem;
         font-family: "Ubuntu Mono", monospace;
     }
+
+    .slider img {
+        object-fit: none;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .slider video {
+        object-fit: none;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .slider-1 img {
+        object-fit: none;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .slider-1 video {
+        object-fit: none;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    
 }
 
 /* _______ Section */
@@ -1178,15 +1202,13 @@ box-shadow:  12px 12px 38px #080808,
 .slider-1 img {
     flex: 1 0 100%;
     scroll-snap-align: start;
-    max-width: 500px;
-    height: 100px;
+    object-fit: cover;
 }
 
 .slider-1 video {
     flex: 1 0 100%;
     scroll-snap-align: start;
-    max-width: 500px;
-    height: 100px;
+    object-fit: cover;
 }
 
 .prevBtn:hover, .nextBtn:hover {

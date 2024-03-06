@@ -1692,6 +1692,8 @@ box-shadow:  12px 12px 38px #080808,
         background: linear-gradient(145deg, #151515, #121212);
         box-shadow:  12px 12px 18px #080808,
                  -12px -12px 18px #202020;
+        box-sizing: border-box; /* Added */
+
       }
       .menu__link {
         font-size: 1rem;

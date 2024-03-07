@@ -452,6 +452,14 @@ box-shadow:  12px 12px 38px #080808,
     font-family: "Cabin", sans-serif;    
 }
 
+.extra {
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 100px;
+    color: rgb(250, 200, 91);
+    text-decoration: underline;
+}
+
 /* Mobile */
 @media (max-width: 600px) {
     #about {
@@ -520,6 +528,11 @@ box-shadow:  12px 12px 38px #080808,
         font-family: "Ubuntu", monospace;
       }
     
+    .extra {
+        cursor: pointer;
+        font-size: 8px;
+        margin-top: 40px;
+    }
 }
 
 

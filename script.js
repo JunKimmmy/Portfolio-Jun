@@ -50,6 +50,31 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
+    const prevBtn = document.querySelector(".contentimage-aibraille .prevBtn");
+    const nextBtn = document.querySelector(".contentimage-aibraille .nextBtn");
+    const slider = document.querySelector(".contentimage-aibraille .slider-2");
+    
+    let currentSlide = 0;
+
+    prevBtn.addEventListener("click", function() {
+        currentSlide = (currentSlide - 1 + slider.children.length) % slider.children.length;
+        updateSlider();
+    });
+
+    nextBtn.addEventListener("click", function() {
+        currentSlide = (currentSlide + 1) % slider.children.length;
+        updateSlider();
+    });
+
+    function updateSlider() {
+        for (let i = 0; i < slider.children.length; i++) {
+            slider.children[i].style.display = "none";
+        }
+        slider.children[currentSlide].style.display = "block";
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
     const prevBtn = document.querySelector(".contentimage-excavator .prevBtn");
     const nextBtn = document.querySelector(".contentimage-excavator .nextBtn");
     const slider = document.querySelector(".contentimage-excavator .slider-1");

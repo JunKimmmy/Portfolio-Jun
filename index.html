@@ -10,13 +10,12 @@
 <body style="background-color: #141414;">
     <nav id="desktop-nav">
         <div class="logo">
-            <h1 class="logotop">Jun Young Kim</h1>
+            <a href="index.html"><h1 class="logotop">Jun Young Kim</h1></a>
             <p class="logobottom">Electrical Engineer</p>
         </div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="PCBprojects.html">PCB Projects</a></li>
+                <li><a href="Oprojects.html">Other Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -33,10 +32,9 @@
                 <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="PCBprojects.html">PCB Projects</a></li>
+                <li><a href="Oprojects.html">Other Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </div>
         </div>
     </nav>
@@ -77,12 +75,9 @@
                     I am currently in the process of complete my <b>Bachelors of Applied Sciences (BASc) in 
                     Electrical Engineering</b> at the <b>University of Waterloo</b>.
                     <br><br>I thrive to break boundaries, constantly seeking out working 
-                    with challenging issues with complex technologies, thus, I excell in
-                    enviornments that push me to adapt. I am extremely interested in fields such
-                    as accessibility technologies, AI, web development, cloud computing, integrated circuits, semiconductors, and more.
-                    <br><br>Outside formalities, some of my interests lie in programming, making robots, writing
-                    music, working out, making websites, and playing videogames.
-                    <br>
+                    with challenging issues with complex technologies, with a keen interest in accessibility technologies.
+                    <br>I love, and am versed in, PCB design, power electronics, photovoltaic systems, battery management integrated circuits, emmbedded systems, mathematics,
+                    and physics.
 
                     <br><br>Thanks for swinging by my portfolio – your time is greatly appreciated! Let's connect and explore potential collaborations together.
                     <p class="extra" onclick="location.href= 'https://github.com/JunKimmmy/Portfolio-Jun'">This portfolio was programmed in HTML/CSS/JS, click here for details</p>
@@ -166,141 +161,6 @@
             </div>
             </div>
     </section>
-    <section id="projects">
-        <p class="titleprojects">My Projects</p>
-                <section id="project__prosthetic">
-                    <div class="content-prosthetic">
-                        <div class="modelprosthetic">
-                            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.55/build/spline-viewer.js"></script>
-                            <spline-viewer url="https://prod.spline.design/7GIstm15k4z-Mnlq/scene.splinecode"></spline-viewer>
-                        </div>
-                        <div class="textprosthetic">
-                            <p class="titleprosthetic">Bionic EVO: Prosthetic Arm</p>
-                            <p class="descriptionprosthetic"> 
-                                <b>September 2022 - December 2023</b> <br>
-                                <br><b>Skills:</b><br>C++, SOLIDWORKS, LaTeX, 3D Printing, Arduino IDE <br>
-                                <br><b>Components:</b><br>STM32 Microcontroller, SG90 Servo Motor, Electromyography (EMG) Sensor, Potentiometer, Arduino UNO <br>
-                                <br><b>Project Description:</b>
-                                <br>The primary objective of this project is to design
-                                and implement an advanced prosthetic human arm that helps
-                                amputees regain functionality. The aim is to create a prosthetic
-                                arm that closely mimics the capabilities of a real human arm,
-                                allowing users to perform a wide range of daily activities and
-                                regain a sense of independence. 
-                                <br><br>Using a STM32 Microcontroller in conjunction with 5 servo motors and a electromyography (EMG) Sensor
-                                the device is controlled using muscle control via the EMG sensor, which then dictates the movement of the servos that contract the fingers of the prosthetic
-                                using string.
-                                <br><br>I leveraged 75+ months expertise in C++ programming and circuitry design to create an efficient control system that would work seamlessly with the large quantity of components used, and an advanced input such as the EMG sensor.
-                                <br><br>I harnessed 2 years of SOLIDWORKS experience skills via a mentor to create a functional 3D design for the prosthetic that was modeled based on meticulous measurements based on human anatomy and to house each component.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="btn-container-2">
-                        <button class="btn-1 btn-color-p2" onclick="window.open('./assets/BIONIC_EVO__Project_Proposal.pdf')">Project Proposal</button>
-                        <button class="btn-1 btn-color-p1" onclick="window.open('./assets/Final Design Document.pdf')">Design Document</button>
-                        <button class="btn-1 btn-color-p3" onclick="location.href= 'https://github.com/JunKimmmy/BionicEvo'">Github Repository</button>
-                        <button class="btn-1 btn-color-p4" onclick="window.open('./assets/Project_Bionic_EVO_3D_Models.zip')">Download 3D Models</button>
-                    </div>
-                    <p class="imagegallerytitle">Images/Videos:</p>
-                    <div class="contentimage-prosthetic">
-                        <button class="prevBtn">&#10094;</button>
-                        <div class="image-gallery-1">
-                            <div class="slider-wrapper-1">
-                                <div class="slider">
-                                    <img id="slide-1" src="assets/IMG_2973.jpg" alt="Full Design Assembled">
-                                    <img id="slide-2" src="assets/FullProstheticAssembly.png" alt="Full Prosthetic Assembly">
-                                    <img id="slide-3" src="assets/Screenshot 2024-03-02 at 3.19.11 AM.png" alt="Schematic Drawing">
-                                    <img id="slide-4" src="assets/FullProstheticAssembly_TechincalDrawing.png" alt="Technical Drawing">
-                                    <img id="slide-5" src="assets/ConceptualDrawing.jpg" alt="Conceptual Drawing">
-                                    
-                                    <img id="slide-6" src="assets/IMG_2976.jpg" alt="Circuitry Assembled">
-                                    <img id="slide-7" src="assets/IMG_2975.jpg" alt="Full Design Assembled2">
-                                    <img id="slide-8" src="assets/IMG_2974.jpg" alt="Full Design Assembled3">
-                                    <video id="slide-9" controls src="assets/PrototypeTestVideo.MP4"></video>
-                                </div>                                
-                            </div>
-                        </div>
-                        <button class="nextBtn">&#10095;</button>
-                    </div>
-                </section>
-                
-                <section id="project__aibraille">
-                    <div class="content-aibraille">
-                        <div class="modelaibraille">
-                        </div>
-                        <div class="textaibraille">
-                            <p class="titleaibraille">BrailleEye: AI, Object Detection, Braille Label Maker</p>
-                            <p class="descriptionaibraille"> 
-                                <b>Feburary 2024 - TBD</b> <br>
-                                <br><b>Skills:</b><br>C++, SOLIDWORKS, 3D Printing, Arduino IDE, Edgeimpulse<br>
-                                <br><b>Components:</b><br>ESP32S3-CAM, Stepper Motor, Button, Braille Label maker<br>
-                                <br><b>Project Description:</b>
-                                <br>The project entailed the integration of a Braille label maker and ESP32 microcontroller, establishing seamless communication between the two components. Leveraging the ESP32's camera module, the system interfaced with an AI model trained manually via Edge Impulse, enabling real-time object detection. A sophisticated process was engineered to convert detected object names into Braille, meticulously translating each letter of the identified object's name into corresponding angles. This precise control mechanism facilitated the manipulation of a stepper motor, orchestrating the turning of the dial on the Braille label maker with accuracy and efficiency.
-                                <br><br>(Work in progress...)
-                            </p>
-                        </div>
-                    </div>
-                    <div class="btn-container-4">
-                    </div>
-                    <p class="imagegallerytitle">Images/Videos:</p>
-                    <div class="contentimage-aibraille">
-                        <button class="prevBtn">&#10094;</button>
-                        <div class="image-gallery-3">
-                            <div class="slider-wrapper-3">
-                                <div class="slider-2">
-                                    <img id="slide-1" src="assets/IMG_0171.jpeg" alt="Full Design Assembled">
-                                    <img id="slide-2" src="assets/6C9C23EE-8DD2-4EB0-B4B1-F60311251CAC.jpg" alt="Full Design Assembly">
-                                    <img id="slide-3" src="assets/6F508DB4-FDB5-4E5E-997E-1FAB6E992E5C.jpg" alt="Schematic Drawing">                               
-                                    <video id="slide-4" controls src="assets/24aa51fd630d434d87f8644832576cc2.mov"></video>
-                                </div>                                
-                            </div>
-                        </div>
-                        <button class="nextBtn">&#10095;</button>
-                    </div>
-                </section>
-            
-                <section id="project__excavator">
-                    <div class="content-excavator">
-                        <div class="modelexcavator">
-                            <img class="excavatorimage" src="assets/Screenshot 2024-03-02 at 6.05.46 AM.png" alt="3D design">
-                        </div>
-                        <div class="textexcavator">
-                            <p class="titleexcavator">Gyro Controlled Excavator Arm</p>
-                            <p class="descriptionexcavator"> 
-                                <b>December 2021 - June 2023</b> <br>
-                                <br><b>Skills:</b><br>C++, SOLIDWORKS, 3D Printing, Arduino IDE <br>
-                                <br><b>Components:</b><br>Arduino Micro, SG90 Servo Motor, MPU-6050 Accelerometer Gyroscope<br>
-                                <br><b>Project Description:</b>
-                                <br>Embarking on the Gyro Controlled Excavator project served as a dynamic learning journey, introducing me to SOLIDWORKS modeling, MPU-6050 Accelerometer Gyroscopes, and refining soldering skills. The project aimed to fuse these newfound skills into a cohesive robotic endeavor.
-                                <br><br>Using SOLIDWORKS, I meticulously designed a miniature robotic arm with three servo motors, each governing a joint's movement. Soldering the Gyroscope to the microcontroller facilitated seamless integration, enhancing the arm's functionality.
-                                <br><br>Programming the Gyro enabled precise motion interpretation, empowering the robotic arm to respond with fluidity and accuracy. This holistic process honed skills in CAD modeling, soldering, and programming, underscoring the project's role as a catalyst for continuous learning and exploration in robotics.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="btn-container-3">
-                        <button class="btn-2 btn-color-p2" onclick="window.open('./assets/Razin Saeed _ Jun Young Kim - Robotic Arm - TECHNICAL REPORT.pdf')">Technical Report</button>
-                    </div>
-                    <p class="imagegallerytitle">Images/Videos:</p>
-                    <div class="contentimage-excavator">
-                        <button class="prevBtn">&#10094;</button>
-                        <div class="image-gallery-2">
-                            <div class="slider-wrapper-2">
-                                <div class="slider-1">
-                                    <img id="slide-1" src="assets/Screenshot 2023-09-12 at 6.15.59 PM.png" alt="Full Design Assembled">
-                                    <img id="slide-2" src="assets/Screenshot 2023-09-12 at 6.19.03 PM.png" alt="Full Design Assembly">
-                                    <img id="slide-3" src="assets/Screenshot 2023-09-12 at 6.14.47 PM.png" alt="Schematic Drawing">
-                                    <img id="slide-4" src="assets/Screenshot 2023-09-12 at 6.18.42 PM.png" alt="Circuitry">                                    
-                                    <img id="slide-5" src="assets/Screenshot 2023-09-12 at 6.17.32 PM.png" alt="Code">                                    
-                                    <video id="slide-6" controls src="assets/IMG_4284 .MOV"></video>
-                                    <video id="slide-7" controls src="assets/IMG_4282 .MOV"></video>
-                                </div>                                
-                            </div>
-                        </div>
-                        <button class="nextBtn">&#10095;</button>
-                    </div>
-                </section>
-
-    </section>
     <section id="contact">
         <p class="titlecontact">Contact Me</p>
             <div class="contactcontent">
@@ -350,10 +210,8 @@
         </ul>
         <ul class="menu">
           <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-          <li class="menu__item"><a class="menu__link" href="#about">About</a></li>
-          <li class="menu__item"><a class="menu__link" href="#skills">Skills</a></li>
-          <li class="menu__item"><a class="menu__link" href="#projects">Projects</a></li>
-          <li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
+          <li class="menu__item"><a class="menu__link" href="PCBprojects.html">PCB Projects</a></li>
+          <li class="menu__item"><a class="menu__link" href="Oprojects.html">Other Projects</a></li>
     
         </ul>
         <p>Jun Young Kim</p>

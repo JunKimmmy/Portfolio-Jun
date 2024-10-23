@@ -1679,24 +1679,42 @@ section {
 
 
 
+
+
 /* PCB Projects */
 
 
-#buckconverter {
-    align-items: center; /* Center content vertically inside the box */
+
+#pcb {
+    height: fit-content;
     max-width: 1500px;    /* Set a maximum width for the buck converter */
     margin: 0 auto;      /* Center the section horizontally */
     border-radius: 63px;
-    margin-top: 600px;
+    margin-top: 450px;
     background: #141414;
     padding: 20px;       /* Add padding inside the box */
     box-shadow: 12px 12px 38px rgba(0, 0, 0, 0.5); /* Corrected shadow */
 }
 
-.descbuck {
-    text-align: center;
+.descpcbnophoto {
+    text-align: left;
     color: #fff;
+    padding: 50px;
 }
+
+.titlepcb {
+    display: flex;
+    justify-content: left;       /* Center items horizontally */
+    align-items: left; 
+    margin-left: 50px;
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+    border-radius: 70px;
+    background: #141414;
+    box-shadow:  12px 12px 38px #080808,
+             -12px -12px 38px #202020;
+  }
 
 
 

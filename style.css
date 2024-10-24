@@ -1700,7 +1700,18 @@ section {
     text-align: left;
     color: #fff;
     padding: 50px;
+    font-weight: 600;
+    margin-bottom: 1rem;
 }
+
+.descpcbnophoto li {
+    text-align: left;
+    color: #fff;
+    padding: 50px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+ 
 
 .titlepcb {
     display: flex;
@@ -1715,7 +1726,6 @@ section {
     box-shadow:  12px 12px 38px #080808,
              -12px -12px 38px #202020;
   }
-
 
 
 

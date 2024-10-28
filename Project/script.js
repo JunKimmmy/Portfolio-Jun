@@ -1,5 +1,3 @@
-$(document).ready(function(){
-    // Your code in here.
 
 window.onload = function() {
     var splineElement = document.querySelectorAll('spline-viewer');
@@ -149,5 +147,4 @@ window.onload = function() {
       var shadowRoot = splineElement[pas].shadowRoot;
       shadowRoot.querySelector('#logo').remove();
     }
-  }
-}); 
+  } 

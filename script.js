@@ -125,26 +125,4 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-import { defineStackbitConfig } from '@stackbit/types'
 
-export default defineStackbitConfig({
-  stackbitVersion: '~0.6.0',
-  ssgName: 'gatsby',
-  nodeVersion: '18', 
-  experimental: { 
-    ssg: { 
-      logPatterns: { 
-        up: ['success onPreInit'], 
-      }, 
-    }, 
-  },
-})
-
-window.onload = function() {
-    var splineElement = document.querySelectorAll('spline-viewer');
-    
-    for (let pas = 0; pas < splineElement.length; pas++) {
-      var shadowRoot = splineElement[pas].shadowRoot;
-      shadowRoot.querySelector('#logo').remove();
-    }
-  } 

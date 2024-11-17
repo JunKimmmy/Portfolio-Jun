@@ -1687,7 +1687,7 @@ section {
 
 #pcb {
     height: fit-content;
-    max-width: 1500px;    /* Set a maximum width for the buck converter */
+    max-width: 1200px;    /* Set a maximum width for the buck converter */
     margin: 0 auto;      /* Center the section horizontally */
     border-radius: 63px;
     margin-top: 450px;
@@ -1701,17 +1701,22 @@ section {
     color: #fff;
     padding: 50px;
     font-weight: 600;
-    margin-bottom: 0px;
-    margin-top: -50px;
+    margin-bottom: -40px;
+    margin-top: -55px;
+    margin-left: 50px;
 }
 
 .descdot {
     text-align: left;
-    color: #fff;
     padding: 50px;
     font-weight: 600;
     margin-bottom: 0px; 
     margin-top: -100px;
+    text-align: left;
+    font-size: 13px;
+    margin-left: 70px;
+    color: rgb(183, 183, 183);
+        font-family: "Cabin", sans-serif;  
 }
 
 

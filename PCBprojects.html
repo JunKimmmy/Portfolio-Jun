@@ -43,20 +43,28 @@
 
     <section id="pcb">
         <p class="titlepcb">MSXV Battery Management System Carrier</p>
-        <iframe src="https://personal-viewer.365.altium.com/client/index.html?feature=embed&source=DC70A3C6-00CD-4AE7-879F-450D4D6999B9&activeView=PCB"  width="1280" height="720" style="overflow:hidden;border:none;width:70%;height:500px; display: flex; justify-content: center; align-items: center; margin: auto; padding: 20px;" scrolling="no" allowfullscreen="true" onload="window.top.scrollTo(0,0);"></iframe>        <p class="descpcb"> 
+        <iframe src="https://personal-viewer.365.altium.com/client/index.html?feature=embed&source=DC70A3C6-00CD-4AE7-879F-450D4D6999B9&activeView=PCB"  width="1280" height="720" style="overflow:hidden;border:none;width:70%;height:500px; display: flex; justify-content: center; align-items: center; margin: auto; padding: 20px;" scrolling="no" allowfullscreen="true" onload="window.top.scrollTo(0,0);"></iframe>        
+            <p class="descpcb"> 
                     <b>October 2024 - November 2024 </b>
                     <br>
                             <br><b>Project Objective:</b><br>
-
+                            <p class="innertext">
+                            To optimize the 15th Midnight Sun Solar Race Car’s battery management system (BMS) by redesigning the battery management carrier PCB layout and schematic, merging the existing motor controller interface (MCI) board functionalities—including precharge and motor controller interface—into the BMS carrier board. The redesign aimed to enhance functionality, safety, and system integration.
+                            </p>
                             <br>
+                            <p class="descpcb"> 
                             <br><b>Description:</b><br>
-                            
-                            <br>
-                            <br>
-                            <br>
-                            <br><br>
-                            <br><br>
-                            <br><br>
+                            </p>
+                            <ul class="descdot"> 
+                                <li>Consolidated the motor controller interface board into the BMS carrier board, integrating its precharge and motor controller interface functionalities.</li> 
+                                <li>Redesigned the precharge mechanism to improve safety and reliability, utilizing an optocoupler to detect when inrush current ceased, indicating the motor controller’s capacitor was fully charged. The optocoupler’s state controlled a P-channel MOSFET to activate the motor relay, with firmware managing additional verification.</li>
+                                <li>Ensured robust high-voltage and low-voltage isolation across critical systems, including the motor controller interface, precharge circuits, AFE isoSPI interface, and isolated I2C current sensing interface.</li>
+                                <li>Integrated firmware-controlled MOSFETs for external relay operation within the battery box, enabling precise high-voltage system control.</li>
+                                <li>Supported diverse signal protocols, including SPI, I2C, and proprietary LT protocol isoSPI, ensuring seamless subsystem communication.</li>
+                                <li>Used a custom CAN interface to facilitate communication between the motor controller and the STM32 controller using a CAN controller and transceiver.</li>
+                                <li>Established communication with three AFE boards managing cell balancing across nine battery modules in the battery pack.</li>
+                                <li>Assembled and rigorously tested the redesigned board to ensure seamless integration with the vehicle’s electrical systems and optimal performance under operational conditions.</li>
+                            </ul>
             </p>
         </div>
     </section>
@@ -68,16 +76,21 @@
                     <b>November 2024</b>
                     <br>
                             <br><b>Project Objective:</b><br>
-
+                            <p class="innertext">
+                            To design and develop multi-functional personal business card which has the main operating function of a multimeter powered by the STM32F042 series microcontroller, with capabilities for measuring current, voltage, inductance, capacitance, and resistance.
+                            </p>
                             <br>
+                            <p class="descpcb"> 
                             <br><b>Description:</b><br>
-                            
-                            <br>
-                            <br>
-                            <br>
-                            <br><br>
-                            <br><br>
-                            <br><br>
+                            </p>
+                            <ul class="descdot"> 
+                                <li>Designed a compact multimeter featuring five measurement modes, each with dedicated circuitry to measure current, voltage, inductance, capacitance, and resistance.</li>
+                                <li>Achieved a measurement range of up to 4A for current and -40V to +40V for voltage with a resolution of 100mA.</li>
+                                <li>Powered the device using a 3.7V 300mAh LiPo battery, incorporating fault detection mechanisms for over-voltage protection (OVP), under-voltage protection (UVP), over-current charging (OCC), over-current discharging (OCD), and short-circuit protection (SCP).</li>
+                                <li>Integrated USB-C for charging to ensure modern compatibility and convenience.</li>
+                                <li>Implemented an I2C-controlled OLED display for clear, low-power visualization of measurement data.</li>
+                                <li>Assembled the device using a reflow oven for SMD components and manually soldered the FPC connector for the OLED display.</li>
+                            </ul>
             </p>
         </div>
     </section>
@@ -89,18 +102,25 @@
                     <b>October 2024</b>
                     <br>
                             <br><b>Project Objective:</b><br>
-
+                            <p class="innertext">
+                            To design and implement an efficient AC-DC flyback converter utilizing the TNY288DG switching IC, providing dual low-voltage outputs while ensuring reliability, safety, and adherence to standard electrical specifications.
+                            </p>
                             <br>
+                            <p class="descpcb"> 
                             <br><b>Description:</b><br>
-                            
-                            <br>
-                            <br>
-                            <br>
-                            <br><br>
-                            <br><br>
-                            <br><br>
+                            </p>
+                            <ul class="descdot"> 
+                                <li>Developed an AC-DC flyback topology converter achieving 80% power efficiency, suitable for input voltages ranging from 90 VAC to 132 VAC, with a nominal input of 120 VAC at 60 Hz, targeting U.S. and Canadian standards.</li>
+                                <li>Delivered dual low-voltage outputs: 5V at 1A and 9V at 1A, designed to meet precise power requirements.</li>
+                                <li>Designed and optimized a custom transformer with tailored primary and secondary windings to ensure stable output performance.</li>
+                                <li>Selected components meticulously to meet performance, reliability, and safety specifications.</li>
+                                <li>Designed the PCB layout with clearly defined high-voltage and low-voltage sections, ensuring proper isolation and compliance with safety standards.</li>
+                                <li>Integrated an RCD clamp circuit to manage peak voltage stress on the switching IC during turn-off, mitigating transient voltage effects on the internal FET and enhancing system durability.</li>
+                                <li>Documented the entire design process, creating a comprehensive guide on switching-mode power supply design, including detailed justifications for engineering decisions to support knowledge sharing and future development.</li>
+                            </ul>
             </p>
         </div>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vSPb7OcszV-hGekSQhYxnQ2PHiaOVEKcOB1IDUdXvfvc1EzC9wWNkao1s4XWo0T4g/pub?embedded=true"width="1280" height="1000" style="overflow:hidden;border:none;width:70%;height:1000px; display: flex; justify-content: center; align-items: center; margin: auto;padding: 20px;"></iframe>    
     </section>
 
     <section id="pcb">
@@ -108,18 +128,23 @@
         <p class="descpcb"> 
                     <b>October 2024 - November 2024 </b>
                     <br>
-                            <br><b>Project Objective:</b><br>
-
-                            <br>
-                            <br><b>Description:</b><br>
-                            
-                            <br>
-                            <br>
-                            <br>
-                            <br><br>
-                            <br><br>
-                            <br><br>
-            </p>
+                    <br><b>Project Objective:</b><br>
+                    <p class="innertext">
+                        To lead the development and refinement of the center console PCB for the 15th Midnight Sun Solar Race Car, enhancing driver visibility and system performance while fostering team expertise in PCB design and assembly.
+                    </p>
+                    <br>
+                    <p class="descpcb"> 
+                    <br><b>Description:</b><br>
+                    </p>
+                    <ul class="descdot"> 
+                        <li>Directed the end-to-end design and development of the center console PCB, focusing on functionality, reliability, and integration within the vehicle.</li>
+                        <li>Optimized dashboard digital display placement and design to significantly improve driver visibility and ergonomic accessibility.</li>
+                        <li>Delivered comprehensive training sessions on Altium Designer, covering advanced topics such as component selection based on electrical characteristics, hierarchical schematic design, multilayer PCB layout optimization, and design rule checks.</li>
+                        <li>Conducted thorough PCB reviews to validate circuit integrity and verify alignment with team standards and specifications.</li>
+                        <li>Led the hands-on assembly process, introducing advanced soldering techniques, overseeing precise reflow oven operations, and demonstrating ultrasonic cleaning methods to ensure high reliability and performance.</li>
+                        <li>Collaborated with cross-functional teams to troubleshoot and resolve technical challenges, ensuring timely project delivery and alignment with the race car's overall objectives.</li>
+            </ul>
+</p>
         </div>
     </section>
 
@@ -129,26 +154,25 @@
             <p class="descpcb"> 
                             <b>September 2024</b>
                             <br>
-                            <br><b>Project Objectives:</b><br><br>
-                            <ul class="descdot"> 
-                                <li>The Midnight Sun AUX Voltage is 10V - 15V depending on its SoC (state of charge)</li> 
-                                <li>Design a circuit and PCB that checks a voltage tap</li> 
-                                <li>    </li> 
-                            </ul>
-                    </p>                  
-            
-                    <p class="descpcb"> 
+                            <br><b>Project Objective:</b><br>
+                            <p class="innertext">
+                            To design and implement a robust voltage monitoring PCB for the Midnight Sun Solar Race Car, ensuring reliable operation within the car's auxiliary voltage range of 10V to 15V, and enhancing integration with the vehicle's electrical system.
+                            </p>
                             <br>
-                            <br><b>Project Description:</b><br><br>
-                        <ul class="descdot"> 
-                            <li>    </li> 
-                            <li>    </li> 
-                            <li>    </li> 
-                            <li>    </li> 
-                            <li>    </li> 
-                         </ul>
-                    </p>
-        </div>
+                            <p class="descpcb"> 
+                            <br><b>Description:</b><br>
+                            </p>
+                            <ul class="descdot"> 
+                                <li>Engineered a voltage monitoring circuit with two precision comparators to validate the auxiliary battery's state of charge (SoC), with one comparator ensuring the voltage remains above 10V and the other ensuring it remains below 15V.</li>
+                                <li>Incorporated proper hysteresis mechanisms in the comparator designs to prevent false triggering and improve the system's reliability during voltage fluctuations.</li>
+                                <li>Designed and optimized the PCB layout to include short loop connections, minimizing noise and ensuring high signal integrity in a dynamic automotive environment.</li>
+                                <li>Selected and implemented pull-up resistors for stable comparator operation, improving circuit response time and accuracy.</li>
+                                <li>Utilized Molex connectors for robust and standardized in-car connections, ensuring compatibility with existing vehicle wiring systems and enhancing durability under vibration and thermal stresses.</li>
+                                <li>Designed a detailed schematic to guide the PCB development process, incorporating industry best practices for signal routing and component placement.</li>
+                                <li>Conducted thorough testing and validation of the PCB to ensure accurate voltage monitoring and seamless integration with the car's broader electrical systems.</li>
+                            </ul>
+        </p>
+
     </section>
 
     <section id="pcb">
@@ -157,27 +181,25 @@
                 <div class="indent">
                     <p class="descpcb"> 
                             <b>September 2024</b>
+                             <br>
+                            <br><b>Project Objective:</b><br>
+                            <p class="innertext">
+                            To design a high-efficiency buck converter using the AP63301WU-7 synchronous buck converter IC, capable of stepping down a 12V input to a stable 5V output at 3A, while ensuring optimal performance through precise component selection and configuration.
+                            </p>
                             <br>
-                            <br><b>Project Objectives:</b><br><br>
+                            <p class="descpcb"> 
+                            <br><b>Description:</b><br>
+                            </p>
                             <ul class="descdot"> 
-                                <li>Design and select components for a buck converter</li> 
-                                <li>Utilize the AP63301WU-7 synchronous buck converter IC for efficient voltage step-down and regulation</li> 
-                                <li>Configure external components for a 12V input and 5V output at 3A with a switching frequency of 400kHz, ensuring proper selection of inductance and capacitance values</li> 
+                                <li>Designed a high-efficiency buck converter circuit to deliver a regulated 5V output from a 12V input at 3A, with a switching frequency of 400kHz.</li>
+                                <li>Utilized the AP63301WU-7 synchronous buck converter IC, ensuring efficient voltage regulation and minimal power losses.</li>
+                                <li>Carefully selected and sized the inductor and output capacitors to meet stringent requirements for peak voltage ripple and load transient performance.</li>
+                                <li>Optimized the feedback loop to achieve fast transient response and maintain precise voltage regulation under dynamic load conditions.</li>
+                                <li>Designed a compact PCB layout, minimizing loop area to enhance system stability and reduce electromagnetic interference (EMI).</li>
+                                <li>Incorporated robust thermal management strategies to ensure reliable operation under full load conditions.</li>
                             </ul>
-                    </p>                  
-            
-                    <p class="descpcb"> 
-                            <br>
-                            <br><b>Project Description:</b><br><br>
-                        <ul class="descdot"> 
-                            <li>Designed and component selected for a high-efficiency buck converter</li> 
-                            <li>Implemented the AP63301WU-7 synchronous buck converter IC, ensuring compatibility with external components for stable operation</li> 
-                            <li>Selected and sized the inductor and output capacitors to meet peak voltage ripple and load transient requirements</li> 
-                            <li>Maintained a compact layout to reduce loop area and improve system stability</li> 
-                            <li>Optimized the feedback loop for fast transient response and precise voltage regulation</li> 
-                         </ul>
-                    </p>
-                </div>
+            </p>
+
     </section>
 
 <section id="contact">
